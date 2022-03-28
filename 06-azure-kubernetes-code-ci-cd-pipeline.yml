@@ -53,5 +53,5 @@ stages:
         action: 'deploy'
         kubernetesServiceConnection: 'azure-kubernetes-connection'
         namespace: 'exchange'
-        manifests: '$(System.ArtifactsDirectory)/deployments.yaml'
-        containers: 'in28min/currency-exchange-devops:${tag}'
+        manifests: '$(System.ArtifactsDirectory)/configuration/kubernetes/deployments.yaml'
+        containers: 'in28min/currency-exchange-devops:$(tag)'
