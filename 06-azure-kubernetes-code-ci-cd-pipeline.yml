@@ -34,7 +34,6 @@ stages:
 # Stage 2
 # Download the K8s configuration files
 # Deploy to K8s cluster with Docker Image
-stages:
 - stage: Deploy
   displayName: Deploy Image
   jobs:  
